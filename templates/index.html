@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Calculator</title>
+</head>
+<body>
+    <h1>Compound Interest Calculator</h1>
+    <form method="POST" action = "/">
+        <label for = "Enter Intitial">Enter initial</label>
+        <input type ="number" id="Initial" name="initial" required><br>
+        <label for = "Interest">Enter Interest</label>
+        <input type ="number" id="Interest" name="interest" step="0.01" required><br>
+
+        <label for = "Contribution">Contribution</label>
+        <input type ="number" id="Contribution" name="contribution" required><br>
+
+        <label for = "Compounding Type">Compounding Type</label><br>
+        <select id = "CompoundingType" name="type">
+
+            <option value="monthly">monthly</option>
+            <option value="annually">annually</option>
+        </select><br>
+
+
+        <label for = "Time">Time Period in Years</label>
+        <input type ="number" id="Time_Period" name="time" required><br>
+
+        <input type ="submit" value = "Calculate">
+    </form>
+</body>
+</html>
